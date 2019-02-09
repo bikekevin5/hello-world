@@ -29,6 +29,22 @@
          font-size: 3.5rem;
        }
      }
+
+     .map-responsive{
+       overflow:hidden;
+       padding-bottom:100%;
+       position:relative;
+       height:0;
+     }
+
+     .map-responsive iframe{
+       left:0;
+       top:0;
+       height:100%;
+       width:100%;
+       position:absolute;
+     }
+
    </style>
    <!-- Custom styles for this template -->
    <link href="carousel.css" rel="stylesheet">
@@ -159,47 +175,6 @@
     <div class="container marketing">
 
       <!-- Summary and Featurettes -->
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Asian and Queer. <span class="text-muted">A play that examines intersectionality.</span></h2>
-          <p class="lead"> What does it mean to be API and LGBT? Written by first time playwright Mr KL and directed by Mr C, DOMINIC explores what it means to be Asian in America, queer and Confucian, and how to stay hyphy while collecting hongbaos. Playing May 10-12, 2019 at the Bindlestorff Studio Theatre in San Francisco, CA. Tickets Out Now.</p>
-        </div>
-        <div class="col-md-5">
-          <!--{% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}
-          -->
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row featurette">
-        <h2 class="featurette-heading">Our Partners</h2>
-        <p></p>
-      </div>
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect fill="#777" width="100%" height="100%"/><text fill="#777" dy=".3em" x="50%" y="50%">140x140</text></svg>
-          <h2>GAPA Foundation</h2>
-          <p>A longtime member of the theatre scene, Dominic has written and directed many works before. He is most known for his best work. He likes hiking Mt. Tamalpais. This is his first time performing a play live in SF.</p>
-          <!--<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          -->
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          {% include icons/placeholder.svg width="140" height="140" background="#777" color="#777" class="rounded-circle" %}
-          <h2>SF Aids Foundation</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          {% include icons/placeholder.svg width="140" height="140" background="#777" color="#777" class="rounded-circle" %}
-          <h2>SF Arts Commission</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
 
       <!-- START THE FEATURETTES -->
 
@@ -207,11 +182,14 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Asian and Queer. <span class="text-muted">A play that examines intersectionality.</span></h2>
+          <p class="lead"> What does it mean to be API and LGBT? Written by first time playwright Mr KL and directed by Mr C, this San Francisco original play DOMINIC explores what it means to be Asian in America, queer and Confucian, and how to stay hyphy while collecting hongbaos. Playing May 10-12, 2019 at the Bindlestorff Studio Theatre in San Francisco, CA. Tickets Out Now.</p>
         </div>
         <div class="col-md-5">
-          {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}
+          <!--{% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}
+          -->
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"/><text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text></svg>
+
         </div>
       </div>
 
@@ -220,14 +198,21 @@
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading">Staged live at the Bindlestiff. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">We couldn't have done it without our friends at the Bindlestiff Studio.</p>
+          <p class="lead">We couldn't have done it without our Filipinx-American friends at the Bindlestiff Studio.</p>
           <p class="lead">185 6th St. SF CA 94103 USA </p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.426138635959!2d-122.40954208484645!3d37.78005191962929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858083e3143673%3A0x3ccf551ad2674860!2sBindlestiff+Studio!5e0!3m2!1sen!2sus!4v1549741282922" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
           <!--<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           -->
         </div>
         <div class="col-md-5 order-md-1">
-          {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}
+          <!--{% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}
+          -->
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.426138635959!2d-122.40954208484648!3d37.78005191962929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858083e3143673%3A0x3ccf551ad2674860!2sBindlestiff+Studio!5e0!3m2!1sen!2sus!4v1549744272604" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <!--
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"/><text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text></svg>
+        -->
         </div>
       </div>
 
@@ -235,11 +220,17 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <h2 class="featurette-heading">Thanks Partners. <span class="text-muted">We love you.</span></h2>
+          <!--<p class="lead">We couldn't have done without your support. Consider supporting DOMINIC on Patreon.</p>-->
+          <p class="lead">Your support helps us share the stories of our community.
+          <!--
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        -->
         </div>
         <div class="col-md-5">
-          {% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}
+          <!--{% include icons/placeholder.svg width="500" height="500" background="#eee" color="#aaa" class="bd-placeholder-img-lg featurette-image img-fluid mx-auto" %}-->
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect fill="#eee" width="100%" height="100%"/><text fill="#aaa" dy=".3em" x="50%" y="50%">500x500</text></svg>
+
         </div>
       </div>
 
