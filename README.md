@@ -1,6 +1,8 @@
 # hello-world
 first project!
 
+https://bikekevin5.github.io/hello-world/
+
 Hey it's Kevin.
 
 For the icon sections:
